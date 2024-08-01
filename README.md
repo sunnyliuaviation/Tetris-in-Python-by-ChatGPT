@@ -40,7 +40,7 @@ __程式碼執行__
   
 ![image](https://github.com/sunnyliuaviation/Tetris-in-Python-by-ChatGPT/blob/main/image/%E5%9F%B7%E8%A1%8C%E9%81%8A%E6%88%B2.png)
 
-## 研究總結  
+## 研究發現  
 在本次研究中，探討了使用 ChatGPT 3.5 作為輔助工具來創建經典的俄羅斯方塊遊戲，也有一些發現：  
 
 __明確指令的重要性__  
