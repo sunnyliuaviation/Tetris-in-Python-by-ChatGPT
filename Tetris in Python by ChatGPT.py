@@ -180,8 +180,18 @@ def game_loop():
     while not game_exit:
         if game_over:
             game_display.fill(BLACK)
-            game_over_text = font.render(' Game Over !', True, WHITE)
-            game_display.blit(game_over_text, (display_width // 2 - 100, display_height // 2 - 50))
+            # 計算文字的寬度以便置中顯示
+            game_over_text = font.render('Game Over!', True, WHITE)
+            score_text = font.render(f'Score: {score}', True, WHITE)
+            
+            # 計算置中顯示的 x 坐標
+            game_over_x = (display_width - game_over_text.get_width()) // 2
+            score_x = (display_width - score_text.get_width()) // 2
+            
+            # 顯示 Game Over 和分數
+            game_display.blit(game_over_text, (game_over_x, display_height // 2 - 50))
+            game_display.blit(score_text, (score_x, display_height // 2))
+            
             pygame.display.update()
             pygame.time.delay(2000)
             break
