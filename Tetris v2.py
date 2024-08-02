@@ -123,8 +123,8 @@ def draw_game():
         for x in range(play_width):
             if grid[y][x] != 0:
                 draw_block(x, y, SHAPE_COLORS[grid[y][x] - 1])
-    draw_piece(current_piece)
     draw_preview(current_piece)
+    draw_piece(current_piece)
     draw_grid()
     draw_score()
 
